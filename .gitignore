@@ -1,0 +1,7 @@
+# Ignore local build products and transient test files.
+/build/
+/cmake-build/
+/tests/tmp/
+*.obj
+*.o
+/build-test.exe

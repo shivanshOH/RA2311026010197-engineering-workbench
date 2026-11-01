@@ -1,0 +1,12 @@
+# Reproducible dependency record
+
+- Language standard: ISO C++17.
+- CMake: minimum 3.20; tested configuration/build with CMake 4.4.4.
+- Test and packaged build compiler: WinLibs standalone GCC 16.2.0 (x86_64 UCRT, POSIX threads, MinGW-w64 14.0.0).
+- Build optimization: `-O2`; packaged link flags: `-static -static-libgcc -static-libstdc++`.
+- Runtime dependencies: Windows system libraries (Winsock2, Shell32, Advapi32, Universal CRT) only; libstdc++, libgcc and POSIX thread runtime statically linked in the MinGW package.
+- Third-party source libraries: none.
+- Data dependencies: self-created examples only.
+- Portable toolchain source: WinLibs / mingw-w64. GCC components are distributed under their respective GNU licenses; mingw-w64 headers/runtime use their project license. The compiler archive is a build-time tool and is not included in the submission; consult the source distribution's license files if redistributing the toolchain itself.
+
+The package uses no web CDN, remote fonts, runtime Python/Node, network lookup, commercial solver or editor extension at launch. The browser is the user's installed default browser; it opens a local server bound to loopback only.

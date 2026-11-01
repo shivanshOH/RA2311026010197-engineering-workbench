@@ -1,0 +1,13 @@
+# Submission checklist
+
+Candidate ID: RA2311026010197
+
+This folder contains the Windows C++17 engineering workbench, source, bundled launcher, report, numerical outputs, validation records, evidence, embedded design notes, and Git history bundle.
+
+The candidate requested that the handwritten appendix be left out. It is not included. The assignment requires a handwritten derivation appendix; add the candidate's own handwritten scan if the submission portal requires it. Do not represent this package as including that appendix.
+
+Before sending to the employer:
+- Review the report and source and make sure you can explain the model, assumptions, and results.
+- Consider testing the extracted folder on a separate clean Windows machine; only the current development machine was verified.
+- Confirm whether the employer requires a handwritten scan or video evidence, and attach the requested materials yourself if needed.
+- Use only the employer's official submission channel. This package has not been submitted externally.

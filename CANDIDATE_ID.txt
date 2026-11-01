@@ -1,0 +1,6 @@
+Candidate ID: RA2311026010197
+Package: RA2311026010197_Workbench.zip
+
+Includes the C++17 local engineering workbench and launcher, source, report, FEM and training outputs, performance measurements, tests, documentation, embedded design notes, evidence, and repository history bundle.
+
+The handwritten appendix was left out at the candidate's request. It is not part of this package. Hardware behavior is simulated; clean-machine testing has not been done. Refer to docs/COMPLETION_STATUS.md and results/verification_log.txt for the full status. Review all work before external submission.
