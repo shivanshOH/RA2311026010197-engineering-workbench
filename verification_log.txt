@@ -1,0 +1,22 @@
+# Verification log
+
+Date: 2026-11-01 (Asia/Kolkata)
+
+## Build and runtime
+- CMake configure and C++17 build completed using bundled MinGW-w64 GCC 16.2.0 and CMake 4.4.4.
+- Static executable launcher started and served `http://127.0.0.1:8765/` in Chrome on this Windows machine.
+- Browser reported local ready at 796.7608 ms for the measured process run.
+- Browser API `GET /api/bench?cases=50000&mesh=40` returned worker results and host metadata. Raw repeated timings are in `performance_timings.csv`.
+- Browser geometry page screenshot captured at `evidence/01_geometry.png`.
+
+## Automated checks
+- `tests/run_tests.ps1` passed: expected FE midpoint convergence for N=10,20,40,80; four explicit gradients vs central finite differences; valid STL/CSV acceptance; empty/malformed/non-finite STL rejection; wrong-header/NaN/oversize CSV rejection; serial/parallel numerical agreement.
+- Representative observed FE midpoint errors: 1.25, 0.3125, 0.078125 and 0.01953125 C.
+- Backprop initial loss 1.182541819; gradient errors were within 1e-5; loss/training outputs written for 100 updates.
+- Browser API imported `data/example_ascii.stl` (one triangle) and `data/synthetic_temperature.csv` (five nodes, 70 to 100 C) in earlier local checks.
+
+## Boundaries
+- The benchmark and UI checks are on the candidate's current laptop only; there was no separate clean Windows installation.
+- No physical target board/debug probe was connected and no real ANSYS export was available. Device adapters are simulated.
+- The optional VS Code debugger configuration was prepared but not independently verified in VS Code.
+- The two-page handwritten derivation must be produced and scanned by the candidate. No candidate ID has been supplied, so no candidate-specific archive has been made.

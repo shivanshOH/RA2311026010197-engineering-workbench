@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [{
+    "name": "Unified Engineering Workbench (packaged)",
+    "type": "cppvsdbg",
+    "request": "launch",
+    "program": "${workspaceFolder}/Launch.exe",
+    "args": [],
+    "cwd": "${workspaceFolder}",
+    "console": "internalConsole"
+  }]
+}
